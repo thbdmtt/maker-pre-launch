@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: #080c20;
+  color: #ffffff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header .logo {
+  margin: 81px 0 114px 165px;
+}
+header section {
+  display: flex;
+  height: 459px;
+}
+header .heros-left {
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-hero-left.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  left: -4%;
+}
+header .heros-right {
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-hero-right.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  right: -7%;
+}
+header article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/bg-hero-squiggle.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+header article .scroll {
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-scroll.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin: 64px auto;
+}
+header article h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+}
+header article h1 span {
+  color: #3ee9e5;
+}
+header article p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  color: #777f98;
+}
+
+.purpose {
+  display: flex;
+  width: 1110px;
+  margin: 202px auto;
+}
+.purpose p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  color: #777f98;
+  margin-top: 23px;
+}
+.purpose .passions,
+.purpose .lifestyle {
+  margin: -30px 15px;
+}
+.purpose .freedom,
+.purpose .work-anywhere {
+  margin: 30px 15px;
+}
+.purpose h3 {
+  margin-top: 48px;
+}
+.purpose .passions-svg {
+  width: 160px;
+  height: 164px;
+  background-color: #093f68;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-passions.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 45px;
+}
+.purpose .freedom-svg {
+  width: 160px;
+  height: 164px;
+  background-color: #093f68;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-financial-freedom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 45px;
+}
+.purpose .lifestyle-svg {
+  width: 160px;
+  height: 164px;
+  background-color: #093f68;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-lifestyle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 45px;
+}
+.purpose .work-anywhere-svg {
+  width: 160px;
+  height: 164px;
+  background-color: #093f68;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-work-anywhere.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 45px;
+}
+
+.pricing-plan {
+  margin: 202px auto 0 auto;
+  text-align: center;
+  width: 540px;
+}
+.pricing-plan p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  color: #777f98;
+  margin-top: 24px;
+}
+.pricing-plan h2 {
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.price {
+  display: flex;
+  width: 940px;
+  margin: 72px auto 0 auto;
+}
+.price h3 {
+  margin-top: 0px;
+}
+.price p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  color: #777f98;
+}
+.price li {
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+.price ul {
+  padding: 0 20px;
+}
+.price .free {
+  background-color: #093f68;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 38px;
+  width: 445px;
+  height: 349px;
+  margin-top: 12px;
+  list-style: url(./maker-pre-launch-landing-page/starter-code/assets/icon-checked-free.svg);
+  list-style-position: outside;
+}
+.price .free .icon-free {
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-free.svg);
+  width: 46px;
+  height: 46px;
+  display: block;
+  position: relative;
+  top: -15%;
+}
+.price .free span {
+  font-size: 40px;
+  font-weight: 800px;
+  margin-top: 24px;
+}
+.price .paid {
+  background-color: #3ee9e5;
+  color: #080c20;
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 38px;
+  width: 445px;
+  height: 373px;
+  list-style: url(./maker-pre-launch-landing-page/starter-code/assets/icon-check.svg);
+}
+.price .paid .icon-paid {
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-paid.svg);
+  width: 51px;
+  height: 65px;
+  position: relative;
+  top: -16%;
+}
+.price .paid strong {
+  font-size: 40px;
+  font-weight: 800px;
+  margin-top: 24px;
+}
+.price .paid span {
+  position: relative;
+  top: -2%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 228px;
+  margin: 151px auto;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/bg-footer-squiggle.svg);
+}
+footer h2 {
+  font-weight: 800;
+  font-size: 32px;
+}
+footer form {
+  margin-top: 42px;
+}
+footer input {
+  background-color: #093f68;
+  margin-right: 1em;
+  border-style: none;
+  padding: 12px 0 11px 18px;
+  width: 320px;
+  border-radius: 30px;
+}
+footer input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+footer input:focus {
+  border: 2px solid #3ee9e5;
+  outline: none;
+}
+footer button {
+  width: 140px;
+  background-color: #3ee9e5;
+  padding: 12px 18px 11px 18px;
+  border-style: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: #093f68;
+}
+footer button:hover {
+  color: #ffffff;
+  background-color: #080c20;
+  border: 2px solid #3ee9e5;
+}
+footer .error {
+  display: none;
+  color: #ff2965;
+  font-size: 12px;
+  margin: 4px 0 0 18px;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=style.css.map */

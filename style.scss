@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin paragraph {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  color: #777f98;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #080c20;
+  color: #ffffff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header {
+  .logo {
+    margin: 81px 0 114px 165px;
+  }
+  section {
+    display: flex;
+    height: 459px;
+  }
+  .heros-left {
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-hero-left.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    left: -4%;
+  }
+  .heros-right {
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-hero-right.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    right: -7%;
+  }
+  article {
+    @include flex;
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/bg-hero-squiggle.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    .scroll {
+      background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-scroll.svg);
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      margin: 64px auto;
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 56px;
+      span {
+        color: #3ee9e5;
+      }
+    }
+    p {
+      @include paragraph;
+    }
+  }
+}
+.purpose {
+  display: flex;
+  width: 1110px;
+  margin: 202px auto;
+  p {
+    @include paragraph;
+    margin-top: 23px;
+  }
+  .passions,
+  .lifestyle {
+    margin: -30px 15px;
+  }
+  .freedom,
+  .work-anywhere {
+    margin: 30px 15px;
+  }
+  h3 {
+    margin-top: 48px;
+  }
+  .passions-svg {
+    width: 160px;
+    height: 164px;
+    background-color: #093f68;
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-passions.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45px;
+  }
+  .freedom-svg {
+    width: 160px;
+    height: 164px;
+    background-color: #093f68;
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-financial-freedom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45px;
+  }
+  .lifestyle-svg {
+    width: 160px;
+    height: 164px;
+    background-color: #093f68;
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-lifestyle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45px;
+  }
+  .work-anywhere-svg {
+    width: 160px;
+    height: 164px;
+    background-color: #093f68;
+    background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-work-anywhere.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45px;
+  }
+}
+
+.pricing-plan {
+  margin: 202px auto 0 auto;
+  text-align: center;
+  width: 540px;
+  p {
+    @include paragraph;
+    margin-top: 24px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 32px;
+  }
+}
+
+.price {
+  display: flex;
+  width: 940px;
+  margin: 72px auto 0 auto;
+  h3 {
+    margin-top: 0px;
+  }
+  p {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    color: #777f98;
+  }
+  li {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+  }
+  ul {
+    padding: 0 20px;
+  }
+  .free {
+    background-color: #093f68;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding: 38px;
+    width: 445px;
+    height: 349px;
+    margin-top: 12px;
+    list-style: url(./maker-pre-launch-landing-page/starter-code/assets/icon-checked-free.svg);
+    list-style-position: outside;
+    .icon-free {
+      background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-free.svg);
+      width: 46px;
+      height: 46px;
+      display: block;
+      position: relative;
+      top: -15%;
+    }
+    span {
+      font-size: 40px;
+      font-weight: 800px;
+      margin-top: 24px;
+    }
+  }
+  .paid {
+    background-color: #3ee9e5;
+    color: #080c20;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 38px;
+    width: 445px;
+    height: 373px;
+    list-style: url(./maker-pre-launch-landing-page/starter-code/assets/icon-check.svg);
+    .icon-paid {
+      background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-paid.svg);
+      width: 51px;
+      height: 65px;
+      position: relative;
+      top: -16%;
+    }
+    strong {
+      font-size: 40px;
+      font-weight: 800px;
+      margin-top: 24px;
+    }
+    span {
+      position: relative;
+      top: -2%;
+    }
+  }
+}
+
+footer {
+  @include flex;
+  height: 228px;
+  margin: 151px auto;
+  background-image: url(./maker-pre-launch-landing-page/starter-code/assets/bg-footer-squiggle.svg);
+  h2 {
+    font-weight: 800;
+    font-size: 32px;
+  }
+  form {
+    margin-top: 42px;
+  }
+  input {
+    background-color: #093f68;
+    margin-right: 1em;
+    border-style: none;
+    padding: 12px 0 11px 18px;
+    width: 320px;
+    border-radius: 30px;
+  }
+  input::placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+  }
+  input:focus {
+    border: 2px solid #3ee9e5;
+    outline: none;
+  }
+  button {
+    width: 140px;
+    background-color: #3ee9e5;
+    padding: 12px 18px 11px 18px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #093f68;
+  }
+  button:hover {
+    color: #ffffff;
+    background-color: #080c20;
+    border: 2px solid #3ee9e5;
+  }
+  .error {
+    display: none;
+    color: #ff2965;
+    font-size: 12px;
+    margin: 4px 0 0 18px;
+    font-weight: 200;
+  }
+}
