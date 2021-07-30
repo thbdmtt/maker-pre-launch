@@ -26,8 +26,12 @@ header {
     margin: 81px 0 114px 165px;
   }
   section {
-    display: flex;
-    height: 459px;
+    display: grid;
+    grid-template-columns: 408px 1fr 396px;
+    grid-template-rows: 459px;
+    // position: relative;
+    // left: -5%;
+    // right: -15%;
   }
   .heros-left {
     background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-hero-left.svg);
@@ -35,7 +39,7 @@ header {
     height: 100%;
     background-repeat: no-repeat;
     position: relative;
-    left: -4%;
+    left: -16%;
   }
   .heros-right {
     background-image: url(./maker-pre-launch-landing-page/starter-code/assets/illustration-hero-right.svg);
@@ -43,19 +47,24 @@ header {
     height: 100%;
     background-repeat: no-repeat;
     position: relative;
-    right: -7%;
+    right: -16%;
   }
   article {
     @include flex;
     background-image: url(./maker-pre-launch-landing-page/starter-code/assets/bg-hero-squiggle.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     text-align: center;
+    // height: 459px;
     .scroll {
       background-image: url(./maker-pre-launch-landing-page/starter-code/assets/icon-scroll.svg);
       width: 100%;
       height: 100%;
       background-repeat: no-repeat;
-      margin: 64px auto;
+      position: relative;
+      left: 50%;
+      top: 10%;
+      transform: translate(-3%, 0);
     }
     h1 {
       font-weight: 800;
